@@ -1,0 +1,14 @@
+{
+  "appId": "eu.siliconsquirrels.taky",
+  "appName": "Taky",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {},
+  "linuxAndroidStudioPath": "/home/matteo/Documents/android-studio/bin/studio.sh",
+  "plugins": {
+    "SplashScreen": {
+      "showSpinner": true
+    }
+  }
+}

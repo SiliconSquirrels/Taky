@@ -1,0 +1,117 @@
+<ion-header [translucent]="true">
+  <!-- <ion-buttons right>
+      <button ion-button icon-only (click)="toggleAdvanced()" style="padding-right: 4px;">
+        <ion-icon name="settings"></ion-icon>
+      </button>
+    </ion-buttons> -->
+  <ion-toolbar>
+    <!-- <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons> -->
+    <ion-title style="text-align:center">{{ 'title' | translate }}</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="white-bg">
+    <img src="assets/imgs/logo.png" class="center logo">
+    <h6 style="text-align:center; color: grey;">
+      {{version}}
+    </h6>
+    <ion-card class="itemWithBorder">
+      <!-- Username (email) -->
+      <ion-item lines="none">
+        <ion-icon slot="start" name="person-circle-outline"></ion-icon>
+        <ion-label position="floating">{{ 'login.email' | translate }}</ion-label>
+        <ion-input clearInput type="text" placeholder="" [(ngModel)]="username" (ionBlur)="trimUsername()"></ion-input>
+      </ion-item>
+      <!-- Password -->
+      <ion-item lines="none">
+        <ion-icon slot="start" name="key"></ion-icon>
+        <ion-label position="floating">{{ 'login.password' | translate }}</ion-label>
+        <!-- Dots -->
+        <ion-input *ngIf="displayPassword" clearInput type="password" placeholder="" [(ngModel)]="password"
+          (ionBlur)="trimPassword()"></ion-input>
+        <ion-icon slot="end" name="eye" *ngIf="displayPassword" (click)="toggleDisplayPassword()"> </ion-icon>
+        <!-- Clear password -->
+        <ion-input *ngIf="!displayPassword" clearInput type="text" placeholder="" [(ngModel)]="password"></ion-input>
+        <ion-icon slot="end" name="eye-off" *ngIf="!displayPassword" (click)="toggleDisplayPassword()"></ion-icon>
+      </ion-item>
+
+
+      <!-- Language -->
+      <!-- <ion-item>
+      <ion-label>{{"language" | translate}}</ion-label>
+      <ion-select [(ngModel)]="languageDescription">
+        <ion-option *ngFor="let lang of languages" (ionSelect)="langChanged(lang.code)"
+          [selected]="lang.code == language">{{lang.description}}</ion-option>
+      </ion-select>
+    </ion-item> -->
+
+
+      <!-- Server -->
+      <ion-item lines="none" *ngIf="displayAdvanced">
+        <ion-label position="floating">{{ 'login.server' | translate }}</ion-label>
+        <ion-input clearInput type="text" [(ngModel)]="server" (ionBlur)="trimServer()"></ion-input>
+      </ion-item>
+
+      <!-- Advanced & Save -->
+      <!-- <ion-row>
+      <ion-col>
+        <ion-item no-lines>
+          <button type="button" ion-button expand="full" shape="round" (click)="enableAdvanced()">
+            Advanced
+          </button>
+        </ion-item>
+      </ion-col>
+    </ion-row> -->
+
+      <!-- Login -->
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-button size="default" expand="full" shape="round" (click)="doLogin()">
+              {{ 'login.login' | translate }}
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+      <ion-grid>
+        <ion-row>
+          <!-- Register -->
+          <ion-col size="6">
+            <ion-button size="default" expand="full" shape="round" (click)="goToRegister()">
+              {{ 'login.register' | translate }}
+            </ion-button>
+          </ion-col>
+          <!-- Forgot password -->
+          <ion-col size="6">
+            <ion-button size="default" expand="full" shape="round" (click)="forgotPassword()">
+              {{ 'login.forgotPassword' | translate }}
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+      <!-- Bypass login for debug only -->
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-button expand="full" shape="round" default color="danger" (click)="bypassLogin()">
+              Bypass Login
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid> 
+
+    </ion-card>
+  </div>
+</ion-content>
+
+<ion-footer>
+</ion-footer>

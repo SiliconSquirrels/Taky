@@ -1,0 +1,95 @@
+{
+    "login": {
+        "username": "Nome utente",
+        "email": "Email",
+        "password": "Password",
+        "server": "Indirizzo IP server",
+        "login": "LOGIN",
+        "register": "Registrati",
+        "forgotPassword": "Password smarrita",
+        "error": "Errore duante il login",
+        "usernameEmpty": "Il campo nome utente non può essere vuoto. Inserisci il tuo nome utente",
+        "emailEmpty": "Il campo email non può essere vuoto. Inserisci il tuo indirizzo email",
+        "passwordEmpty": "Il campo password non può essere vuoto. Inserisci la tua password",
+        "serverEmpty": "Il campo server non può essere vuoto. Inserisci l'indirizzo del server",
+        "wait": "Login in corso. Attendere",
+        "failed": "Login fallito",
+        "forgotPasswordSuccess": "Segui le istruzioni nella email per reimpostare la password"
+    },
+    "forgotPassword": {
+        "confirm": "Conferma",
+        "backToLogin": "Torna a Login"
+    },
+    "register" : {
+        "title": "Registrazione",
+        "name": "Nome",
+        "surname": "Cognome",
+        "username": "Nome utente",
+        "email": "Email",
+        "phone": "Numero di telefono",
+        "password": "Password",
+        "confirmPassword": "Conferma password",
+        "nameError": "Questo campo è obbligatorio",
+        "surnameError": "Questo campo è obbligatorio",
+        "usernameError": "Il nome utente deve contenere solo lettere e numeri e avere una lunghezza compresa tra 6 e 15 caratteri",
+        "emailError": "Email non corretta",
+        "phoneError": "Numero di telefono non valido",
+        "passwordError": "La password deve essere lunga almeno 8 caratteri",
+        "confirmPasswordError": "Le due password non coincidono",
+        "register": "REGISTRATI",
+        "infoPrivacyLink": "https://www.example.com/gdpr.pdf",
+        "infoPrivacyText": "Scarica l'informativa",
+        "infoGDPR": "Ho letto l’informativa riguardante il trattamento dei miei dati che tiene conto del Regolamento (UE) 679/2016 (GDPR).",
+        "GDPRError": "Assicurati di leggere l'informativa al trattamento dei dati personali",
+        "successMessage": "Le tue credenziali sono state salvate con successo. Riceverai una e-mail con un link per completare la tua registrazione        "
+    },
+    "home": {
+        "title": "Home"
+    },
+    "profile": {
+        "title": "Profilo",
+        "changePassword": "Cambia password"
+    },
+    "changePassword" : {
+        "title": "Cambio password",
+        "oldPassword": "Password attuale",
+        "newPassword": "Nuova password",
+        "confirmPassword": "Conferma password",
+        "oldPasswordError": "Questo campo è obbligatorio",
+        "passwordError": "La password deve essere lunga almeno 8 caratteri",
+        "confirmPasswordError": "Le due password non coincidono",
+        "confirm": "CONFERMA"
+    },
+    "menu": {
+        "menu": "Menu",
+        "logout": "Logout",
+        "exit": "Esci"
+    },
+    "errors": {
+        "serverTimeout": "Timeout. Nessuna risposta dal server"
+    },
+    "serverError": {
+        "invalid_grant": "Credenziali non corrette",
+        "unauthorized": "Errore di autenticazione",
+        "invalid_token": "Token non valido",
+        "Conflict": "Utente già presente nel sistema",
+        "timeout": "Timeout. Nessuna risposta dal server",
+        "error": "Errore del server"
+    },
+    "pdfError": {
+        "ENCODING_ERR": "Errore di codifica"
+    },
+    "title": "Taky",
+    "ok": "Ok",
+    "delete": "Cancella",
+    "cancel": "Annulla",
+    "loading": "Caricamento",
+    "operationComplete": "Operazione completata",
+    "operationCanceled": "Operazione annullata",
+    "operationFailed": "Operazione non riuscita",
+    "open": "Apri",
+    "error": "Errore",
+    "aborted": "Annullato",
+    "serverRequest": "Richiesta al server in corso",
+    "": ""
+}

@@ -1,0 +1,131 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> {{ 'register.title' | translate }}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content no-bounce>
+  <ion-card class="itemWithBorder">
+
+    <!--
+  <ion-row class="app-icon-container">
+    <ion-col text-center>
+      <ion-icon name="ionic" class="app-icon-zoom"></ion-icon>
+    </ion-col>
+  </ion-row>
+-->
+
+    <form [formGroup]="credentialsForm">
+      <!-- name -->
+      <ion-item>
+        <ion-label position="floating"> {{ 'register.name' | translate }} </ion-label>
+        <ion-input [formControl]="credentialsForm.controls['name']" type="text"></ion-input>
+      </ion-item>
+
+      <ion-label color="danger"
+        *ngIf="!credentialsForm.controls.name.valid && (credentialsForm.controls.name.dirty || credentialsForm.controls.name.touched)">
+        <p>{{ 'register.nameError' | translate }}</p>
+      </ion-label>
+
+      <!-- surname -->
+      <ion-item>
+        <ion-label position="floating"> {{ 'register.surname' | translate }} </ion-label>
+        <ion-input [formControl]="credentialsForm.controls['surname']" type="text"></ion-input>
+      </ion-item>
+
+      <ion-label color="danger"
+        *ngIf="!credentialsForm.controls.surname.valid && (credentialsForm.controls.surname.dirty || credentialsForm.controls.surname.touched)">
+        {{ 'register.surnameError' | translate }}
+      </ion-label>
+
+      <!-- username -->
+      <!-- <ion-item>
+      <ion-label position="floating"> {{ 'register.username' | translate }} </ion-label>
+      <ion-input [formControl]="credentialsForm.controls['username']" type="text"></ion-input>
+    </ion-item>
+
+    <div *ngIf="!credentialsForm.controls.username.valid &&
+            credentialsForm.controls.username.dirty" class="validator-error">
+      {{ 'register.usernameError' | translate }}
+    </div> -->
+
+      <!-- email -->
+      <ion-item>
+        <ion-label position="floating"> {{ 'register.email' | translate }} </ion-label>
+        <ion-input [formControl]="credentialsForm.controls['email']" type="email"></ion-input>
+      </ion-item>
+
+      <ion-label color="danger"
+        *ngIf="!credentialsForm.controls.email.valid && (credentialsForm.controls.email.dirty || credentialsForm.controls.email.touched)">
+        {{ 'register.emailError' | translate }}
+      </ion-label>
+      <!-- phone -->
+      <ion-item>
+        <ion-label position="floating"> {{ 'register.phone' | translate }} </ion-label>
+        <ion-input [formControl]="credentialsForm.controls['phone']" type="tel"></ion-input>
+      </ion-item>
+
+      <ion-label color="danger"
+        *ngIf="!credentialsForm.controls.phone.valid &&(credentialsForm.controls.phone.dirty || credentialsForm.controls.phone.touched)">
+        {{ 'register.phoneError' | translate }}
+      </ion-label>
+      <!-- password -->
+      <ion-item>
+        <ion-label position="floating">{{ 'register.password' | translate }}</ion-label>
+        <ion-input [formControl]="credentialsForm.controls['password']" type="password"></ion-input>
+      </ion-item>
+
+      <ion-label color="danger"
+        *ngIf="!credentialsForm.controls.password.valid && (credentialsForm.controls.password.dirty || credentialsForm.controls.password.touched)">
+        {{ 'register.passwordError' | translate }}
+      </ion-label>
+
+      <!-- confirmPassword -->
+      <ion-item>
+        <ion-label position="floating">{{ 'register.confirmPassword' | translate }}</ion-label>
+        <ion-input [formControl]="credentialsForm.controls['confirmPassword']" type="password"></ion-input>
+      </ion-item>
+
+      <ion-label color="danger"
+        *ngIf="!credentialsForm.controls.confirmPassword.valid && (credentialsForm.controls.confirmPassword.dirty || credentialsForm.controls.confirmPassword.touched)">
+        {{ 'register.confirmPasswordError' | translate }}
+      </ion-label>
+
+      <!-- infoGDPR -->
+      <ion-item>
+        <ion-label class="ion-text-wrap">{{ 'register.infoGDPR' | translate }}</ion-label>
+        <ion-checkbox slot="start" [formControl]="credentialsForm.controls['consentGDPR']"> </ion-checkbox>
+        <!-- <ion-input [formControl]="credentialsForm.controls['consentGDPR']"> </ion-input> -->
+
+      </ion-item>
+
+      <ion-label color="danger" *ngIf="!credentialsForm.controls.consentGDPR.valid">
+        {{ 'register.GDPRError' | translate }}
+      </ion-label>
+
+      <!-- register button -->
+      <ion-row class="sign-in-button-container">
+        <ion-col text-center>
+          <ion-button size="default" expand="full" shape="round" [disabled]="!credentialsForm.valid"
+            (click)="onRegister()">
+            {{ 'register.register' | translate }}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <!-- privacy button -->
+      <ion-row class="sign-in-button-container">
+        <ion-col text-center>
+          <ion-button size="default" expand="full" shape="round"
+            (click)="infoPrivacy()">
+            {{ 'register.infoPrivacyText' | translate }}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+    </form>
+  </ion-card>
+</ion-content>
