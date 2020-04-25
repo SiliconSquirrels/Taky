@@ -18,15 +18,15 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: 'profile.title',
-      url: '/profile',
-      icon: 'person-circle'
-    },
-    {
       title: 'home.title',
       url: '/home',
       icon: 'home'
     },
+    {
+      title: 'profile.title',
+      url: '/profile',
+      icon: 'person-circle'
+    }
   ];
   // public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 

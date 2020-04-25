@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HTTP, HTTPResponse } from '@ionic-native/http/ngx';
 import { DataManagerService } from './data-manager.service';
+import { ProfilePage } from '../profile/profile.page';
 
 const LOGIN_API = '/oauth/token';
 const IDENTITY_API = '/user/getIdentity';
@@ -336,6 +337,88 @@ export class RemoteServerManagerService {
         phone: "3334445556",
       };
       resolve(user);
+    });
+  }
+
+  markets = [{
+    id: 1,
+    name: "Grocery",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    img: "assets/imgs/markets/market-5043879_960_720.png"
+  },
+  {
+    id: 2,
+    name: "Bakery",
+    description: "",
+    img: "assets/imgs/markets/bread-306914_960_720.png"
+  },
+  {
+    id: 3,
+    name: "Clothing",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    img: "assets/imgs/markets/jacket-fashion-male-style.jpg"
+  },
+  {
+    id: 4,
+    name: "Shoes",
+    description: "",
+    img: "assets/imgs/markets/box-2864334_960_720.png"
+  },
+  {
+    id: 5,
+    name: "Bakery",
+    description: "",
+    img: "assets/imgs/markets/pitr_bakery_buns.png"
+  },
+  {
+    id: 6,
+    name: "Records",
+    description: "",
+    img: "assets/imgs/markets/masonmouse_45_Record_Album.png"
+  }];
+
+  getMarketsDebug(): Promise<any[]> {
+    return new Promise((resolve) => {
+      resolve(this.markets);
+    });
+  }
+
+
+  getStoreByIdDebug(marketId: number): Promise<any> {
+    let market = this.markets.find(m => m.id == marketId);
+    return new Promise((resolve) => {
+      resolve(market);
+    });
+  }
+
+  getProductsDebug(marketId: number): Promise<any[]> {
+    let products = [];
+    console.log(marketId);
+
+    products = [{
+      id: 1,
+      name: "Pasta",
+      description: "Spaghetti n.5, 1kg",
+      price: 1.4,
+      img: "assets/imgs/markets/market-5043879_960_720.png"
+    },
+    {
+      id: 2,
+      name: "Tomato sauce",
+      description: "Home made sauce, 500g",
+      price: 4.5,
+      img: "assets/imgs/markets/market-5043879_960_720.png"
+    },
+    {
+      id: 3,
+      name: "Olive oil",
+      description: "Extra virgin olive oil, 1l",
+      price: 8.5,
+      img: "assets/imgs/markets/market-5043879_960_720.png"
+    }];
+
+    return new Promise((resolve) => {
+      resolve(products);
     });
   }
 

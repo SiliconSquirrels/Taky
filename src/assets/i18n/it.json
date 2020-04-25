@@ -44,7 +44,10 @@
         "successMessage": "Le tue credenziali sono state salvate con successo. Riceverai una e-mail con un link per completare la tua registrazione        "
     },
     "home": {
-        "title": "Home"
+        "title": "Marketplace"
+    },
+    "store": {
+        "title": "Store"
     },
     "profile": {
         "title": "Profilo",
