@@ -18,8 +18,8 @@ export class StorePage implements OnInit {
   public storeId: number;
   public store: any = {};
   public products: any[] = [];
-  private cart = [];
-  private cartItemCount = new BehaviorSubject(0);
+  public cart = [];
+  public cartItemCount = new BehaviorSubject(0);
 
   @ViewChild('cart', {static: false, read: ElementRef})fab: ElementRef;
 
