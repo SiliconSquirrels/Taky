@@ -10,14 +10,13 @@ It also may happen to be full in specific hours while, shortly after, being empt
 <p>In this scenario Taky aims to be the solution!</p>
 
 <h3>What is the solution we bring to the table</h3>
-<p>Taky is a platform which can be used via mobile app or browser. It provides a marketplace where SMEs can sell products, allowing the customers to choose a time slot in which they would be able to collect their products directly to the shop.<br/>  
+<p>Taky is a platform which can be used via mobile app or browser. It provides a marketplace where SMEs can sell services as well as goods, allowing the customers to choose a time slot in which they would be able to collect their products directly to the shop or take an appointment.<br/>  
 Taky provides an easy way to book time slots, allowing SMEs to keep working respecting imposed restrictions and/or to reduce the queues.<br/>
 Time slots are intended to be flexible according to the seller strategy.</p>
 <p>Using the time slot feature SMEs are also able to provide services, for example:<br/>
 the seller sets on Taky time slots in which they can serve buyers and settings how many people can be served in the same slot.<br/>
 The customer finds a nearby store, buys some products and chooses an available time slot. The system will notify the request and assign the slot to the customer. 
 </p>
-<p>Taky can be used to sell services as well as goods. SMEs can use Taky to manage appointments with the time slot agenda allowing them to sell their services.</p>
 <p><img src="schema.jpg"></p>
 <h3>What we have done dur1ng th1s weekend?</h3>
 <p>
