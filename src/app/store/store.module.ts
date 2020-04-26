@@ -8,6 +8,7 @@ import { StorePageRoutingModule } from './store-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
 
 import { StorePage } from './store.page';
+import { CartModalPageModule } from '../cart-modal/cart-modal.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { StorePage } from './store.page';
     FormsModule,
     IonicModule,
     StorePageRoutingModule,
-    TranslateModule
+    TranslateModule,
+    CartModalPageModule
   ],
   declarations: [StorePage]
 })

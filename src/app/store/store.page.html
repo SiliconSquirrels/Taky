@@ -30,6 +30,12 @@
   </ion-grid>
 -->
 
+<ion-fab vertical="top" horizontal="end" slot="fixed">
+  <ion-fab-button (click)="openCart()" #cart>
+    <div class="cart-length">{{ cartItemCount | async }}</div>
+    <ion-icon name="cart" class="cart-icon"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
 
   <ion-list>
     <ion-item *ngFor="let p of products">
@@ -41,7 +47,7 @@
         <p>{{ p.description }}</p>
       </ion-label>
       <strong slot="end"> € {{ p.price }} </strong>
-      <ion-icon slot="end" style="zoom:2.0;" name="add" (click)="addItem(p)"></ion-icon>
+      <ion-icon slot="end" style="zoom:2.0;" name="add" (click)="addToCart(p)"></ion-icon>
     </ion-item>
 
 
