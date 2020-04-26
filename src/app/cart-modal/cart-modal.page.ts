@@ -66,4 +66,7 @@ export class CartModalPage implements OnInit {
     });
   }
 
+  emptyCart() {
+    return this.cartService.getCart().length == 0;
+  }
 }
