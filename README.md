@@ -33,7 +33,7 @@ The customer finds a nearby store, buys some products and chooses an available t
 </p>
 <h3>The solution’s impact to the crisis</h3>
 <p>Taky was thinked as a concrete and valid solution to ease the customers as well as SMEs. On one side it is the key to reduce queues, situations in which the corona might spread; On the other side Taky wants to help sellers to manage and digitize their business. It does not forget business which sells only services and not physical products. Due to the technologies chosen it is fast to be implemented and easily scalable. Taky is designed to use its versability in order to not leave behind any SME.</p> 
-<p>Taky is designed to not live behind  SMEs who.</p>
+
 
 <p>The key sentence is: “The uniforming of requests”. A single marketplace platform can distribute requests for goods or services of the various shops in the area.The result of this will therefore be fewer queues and a uniform customer number for stores of the same type.<br/>
 This will make it easier to: 
