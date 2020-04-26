@@ -10,7 +10,7 @@
 <ion-content padding>
   <h1> {{ store.name }} </h1>
   <h3> {{ store.description }} </h3>
-<!-- 
+  <!-- 
   <ion-grid>
     <ion-row>
       <ion-col *ngFor="let p of products">
@@ -30,12 +30,12 @@
   </ion-grid>
 -->
 
-<ion-fab vertical="top" horizontal="end" slot="fixed">
-  <ion-fab-button (click)="openCart()" #cart>
-    <div class="cart-length">{{ cartItemCount | async }}</div>
-    <ion-icon name="cart" class="cart-icon"></ion-icon>
-  </ion-fab-button>
-</ion-fab>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="openCart()" #cart>
+      <div class="cart-length">{{ cartItemCount | async }}</div>
+      <ion-icon name="cart" class="cart-icon"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
   <ion-list>
     <ion-item *ngFor="let p of products">
@@ -47,7 +47,9 @@
         <p>{{ p.description }}</p>
       </ion-label>
       <strong slot="end"> {{ p.price | currency:'EUR' }} </strong>
-      <ion-icon slot="end" style="zoom:2.0;" name="add" (click)="addToCart(p)"></ion-icon>
+      <ion-button slot="end" (click)="addToCart(p)">
+        <ion-icon slot="icon-only" class="bold-icon" name="add"></ion-icon>
+      </ion-button>
     </ion-item>
 
 

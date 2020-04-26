@@ -17,3 +17,8 @@ ion-fab-button {
   min-width: 25px;
   z-index: 10;
 }
+
+.bold-icon {
+  --ionicon-stroke-width: 64px;
+  zoom: 2.0;
+}
