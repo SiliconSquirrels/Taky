@@ -46,7 +46,7 @@
         <h3>{{ p.name }}</h3>
         <p>{{ p.description }}</p>
       </ion-label>
-      <strong slot="end"> € {{ p.price }} </strong>
+      <strong slot="end"> {{ p.price | currency:'EUR' }} </strong>
       <ion-icon slot="end" style="zoom:2.0;" name="add" (click)="addToCart(p)"></ion-icon>
     </ion-item>
 
