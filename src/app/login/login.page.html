@@ -72,23 +72,22 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <ion-button size="default" expand="full" shape="round" (click)="doLogin()">
+            <!-- <ion-button size="default" expand="full" shape="round" (click)="doLogin()"> -->
+              <ion-button size="default" expand="full" shape="round" (click)="doLoginDebug()()">
               {{ 'login.login' | translate }}
             </ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
 
-
-      <ion-grid>
+      <!-- TODO: restore -->
+      <ion-grid *ngIf="false">
         <ion-row>
-          <!-- Register -->
           <ion-col size="6">
             <ion-button size="default" expand="full" shape="round" (click)="goToRegister()">
               {{ 'login.register' | translate }}
             </ion-button>
           </ion-col>
-          <!-- Forgot password -->
           <ion-col size="6">
             <ion-button size="default" expand="full" shape="round" (click)="forgotPassword()">
               {{ 'login.forgotPassword' | translate }}
@@ -99,7 +98,7 @@
 
 
       <!-- Bypass login for debug only -->
-      <ion-grid>
+      <!-- <ion-grid>
         <ion-row>
           <ion-col>
             <ion-button expand="full" shape="round" default color="danger" (click)="bypassLogin()">
@@ -107,7 +106,7 @@
             </ion-button>
           </ion-col>
         </ion-row>
-      </ion-grid> 
+      </ion-grid>  -->
 
     </ion-card>
   </div>

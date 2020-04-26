@@ -26,14 +26,13 @@ export class AppComponent implements OnInit {
       title: 'profile.title',
       url: '/profile',
       icon: 'person-circle'
-    },
-    {
-      title: 'agenda.title',
-      url: '/agenda',
-      icon: 'calendar'
-    }
+    }//,
+    // {
+    //   title: 'agenda.title',
+    //   url: '/agenda',
+    //   icon: 'calendar'
+    // }
   ];
-  // public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
   constructor(
     private platform: Platform,
@@ -56,8 +55,8 @@ export class AppComponent implements OnInit {
       this.dataManager.setDeviceModel(this.device.model);
 
       // Set the default language for translation strings, and the current language.
-      this.translate.setDefaultLang('it');
-
+      this.translate.setDefaultLang('en');
+      this.translate.use('en');
       // // back button => close menu
       // platform.registerBackButtonAction((event: any) => {
       //   if (this.menuCtrl.isOpen) {
@@ -90,4 +89,7 @@ export class AppComponent implements OnInit {
       .catch(err => console.log(err));
   }
 
+  logoutDebug() {
+    this.router.navigate(['/login'], { replaceUrl: true });
+  }
 }

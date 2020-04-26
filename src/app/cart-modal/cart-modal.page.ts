@@ -2,6 +2,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../services/cart.service';
 import { ModalController, AlertController } from '@ionic/angular';
+import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-cart-modal',
@@ -13,6 +15,8 @@ export class CartModalPage implements OnInit {
   cart: any[] = [];
 
   constructor(private cartService: CartService,
+    public translate: TranslateService,
+    private router: Router,
     private modalCtrl: ModalController,
     private alertCtrl: AlertController) { }
 
@@ -45,8 +49,16 @@ export class CartModalPage implements OnInit {
 
     let alert = await this.alertCtrl.create({
       header: 'Thanks for your Order!',
-      message: '...............',
-      buttons: ['OK']
+      message: 'Now select a time slot',
+      buttons: [
+        {
+          text: this.translate.instant('ok'),
+          role: 'ok',
+          handler: () => {
+            this.router.navigate(['/agenda'], { replaceUrl: true });
+          }
+        }],
+      backdropDismiss: false
     });
     alert.present().then(() => {
       this.modalCtrl.dismiss();

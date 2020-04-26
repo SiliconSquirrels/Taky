@@ -177,4 +177,51 @@ export class LoginPage implements OnInit {
     await alert.present();
   }
 
+
+  async doLoginDebug() {
+    var errMsg = this.loginChecks()
+
+    if (errMsg != '') {
+      this.presentAlertLoginError(errMsg);
+      return;
+    }
+
+    // Save username/server in local storage
+    this.nativeStorage.setItem('username', this.username)
+      .then(() => console.log('username saved in native storage'))
+      .catch(error => console.log(error));
+
+    const spinner = await this.loadingCtrl.create({ message: this.translate.instant('login.wait') });
+
+    spinner.present();
+    // Do Login 
+    this.remoteServerManager.loginDebug(this.username, this.password)
+      .then(/*async*/() => {
+        // Token already saved in RemoteServerManager
+
+        // Save user data in App
+        this.dataManager.setUsername(this.username);
+        this.dataManager.setPassword(this.password);
+
+        // Go to Homepage
+        spinner.dismiss()
+        this.router.navigate(['/home'], { replaceUrl: true });
+
+      })
+      .catch(async (err) => {
+        console.log('[login] server error', err);
+
+        //Login Failed
+        spinner.dismiss()
+
+        const alert = await this.alertCtrl.create({
+          header: this.translate.instant('login.failed'),
+          subHeader: this.translate.instant(err),
+          buttons: [this.translate.instant('ok')]
+        });
+        await alert.present();
+
+        return;
+      })
+  }
 }

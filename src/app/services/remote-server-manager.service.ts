@@ -383,7 +383,6 @@ export class RemoteServerManagerService {
     });
   }
 
-
   getStoreByIdDebug(marketId: number): Promise<any> {
     let market = this.markets.find(m => m.id == marketId);
     return new Promise((resolve) => {
@@ -441,4 +440,11 @@ export class RemoteServerManagerService {
     });
   }
 
+  loginDebug(username, password){
+    return new Promise((resolve, reject) => {
+      if(username == 'user@example.com' && password == 'password')
+        return resolve();
+        return reject('serverError.unauthorized');
+      });
+  }
 }

@@ -53,6 +53,9 @@
         "title": "Profile",
         "changePassword": "Change password"
     },
+    "agenda": {
+        "title": "Agenda"
+    },
     "changePassword" : {
         "title": "Change password",
         "oldPassword": "Old password",

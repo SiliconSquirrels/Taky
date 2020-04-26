@@ -16,10 +16,11 @@
         </ion-list>
 
         <!-- <div slot="bottom"> -->
-          <ion-item lines="none" (click)="logout()">
-            <ion-icon slot="start" ios="log-out-outline" md="log-out-sharp"></ion-icon>
-            <ion-label>{{ 'menu.logout' | translate }}</ion-label>
-          </ion-item>
+        <!-- <ion-item lines="none" (click)="logout()"> -->
+        <ion-item lines="none" (click)="logoutDebug()">
+          <ion-icon slot="start" ios="log-out-outline" md="log-out-sharp"></ion-icon>
+          <ion-label>{{ 'menu.logout' | translate }}</ion-label>
+        </ion-item>
         <!-- </div> -->
         <!-- <ion-list id="labels-list">
           <ion-list-header>Labels</ion-list-header>

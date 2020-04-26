@@ -11,7 +11,7 @@
 <ion-content padding>
 
   <!-- Card for adding a new event -->
-  <ion-card>
+  <!-- <ion-card>
     <ion-card-header tappable (click)="collapseCard = !collapseCard">
       <ion-card-title>New Event</ion-card-title>
     </ion-card-header>
@@ -25,12 +25,12 @@
       </ion-item>
       <ion-item>
         <ion-label>Start</ion-label>
-        <ion-datetime displayFormat="MM/DD/YYYY HH:mm" pickerFormat="MMM D:HH:mm" [(ngModel)]="event.startTime"
+        <ion-datetime displayFormat="MM/DD/YYYY HH:mm" pickerFormat="MMM D HH:mm" [(ngModel)]="event.startTime"
           [min]="minDate"></ion-datetime>
       </ion-item>
       <ion-item>
         <ion-label>End</ion-label>
-        <ion-datetime displayFormat="MM/DD/YYYY HH:mm" pickerFormat="MMM D:HH:mm" [(ngModel)]="event.endTime"
+        <ion-datetime displayFormat="MM/DD/YYYY HH:mm" pickerFormat="MMM D HH:mm" [(ngModel)]="event.endTime"
           [min]="minDate"></ion-datetime>
       </ion-item>
       <ion-item>
@@ -41,7 +41,7 @@
       </ion-button>
 
     </ion-card-content>
-  </ion-card>
+  </ion-card> -->
 
   <ion-row>
     <!-- Change the displayed calendar mode -->
@@ -75,6 +75,6 @@
 
   <calendar [eventSource]="eventSource" [calendarMode]="calendar.mode" [currentDate]="calendar.currentDate"
     (onEventSelected)="onEventSelected($event)" (onTitleChanged)="onViewTitleChanged($event)"
-    (onTimeSelected)="onTimeSelected($event)" startHour="6" endHour="20" step="30" startingDayWeek="1" #cal>
+    (onTimeSelected)="onTimeSelected($event)" startHour="0" endHour="24" step="15" startingDayWeek="1" #cal>
   </calendar>
 </ion-content>
