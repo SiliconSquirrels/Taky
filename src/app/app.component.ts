@@ -51,6 +51,7 @@ export class AppComponent implements OnInit {
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
+      this.menuCtrl.enable(false, 'appMenu');
       this.dataManager.setDeviceUUID(this.device.uuid);
       this.dataManager.setDeviceModel(this.device.model);
 
