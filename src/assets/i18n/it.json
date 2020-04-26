@@ -7,7 +7,7 @@
         "login": "LOGIN",
         "register": "Registrati",
         "forgotPassword": "Password smarrita",
-        "error": "Errore duante il login",
+        "error": "Errore durante il login",
         "usernameEmpty": "Il campo nome utente non può essere vuoto. Inserisci il tuo nome utente",
         "emailEmpty": "Il campo email non può essere vuoto. Inserisci il tuo indirizzo email",
         "passwordEmpty": "Il campo password non può essere vuoto. Inserisci la tua password",

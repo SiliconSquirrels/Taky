@@ -1,0 +1,98 @@
+{
+    "login": {
+        "username": "Username",
+        "email": "Email",
+        "password": "Password",
+        "server": "Server IP address",
+        "login": "LOGIN",
+        "register": "Register",
+        "forgotPassword": "Forgot password",
+        "error": "Login error",
+        "usernameEmpty": "Username field empty. Insert your username",
+        "emailEmpty": "Email field empty. Insert your Email address",
+        "passwordEmpty": "Password field empty. Insert your password",
+        "serverEmpty": "Server field empty. Insert your Server IP address",
+        "wait": "Logging in. Please wait",
+        "failed": "Login failed",
+        "forgotPasswordSuccess": "Please follow email instructions to reset your password"
+    },
+    "forgotPassword": {
+        "confirm": "Confirm",
+        "backToLogin": "Back to Login"
+    },
+    "register" : {
+        "title": "Register",
+        "name": "Name",
+        "surname": "Surname",
+        "username": "Username",
+        "email": "Email",
+        "phone": "Phone number",
+        "password": "Password",
+        "confirmPassword": "Confirm password",
+        "nameError": "This field must be filled",
+        "surnameError": "This field must be filled",
+        "usernameError": "Username must contains only letter and numbers and be between 6 and 15 characters",
+        "emailError": "Email not valid",
+        "phoneError": "Phone number not valid",
+        "passwordError": "Password must be at least 8 characters",
+        "confirmPasswordError": "The two passwords are different",
+        "register": "REGISTRER",
+        "infoPrivacyLink": "https://www.example.com/gdpr.pdf",
+        "infoPrivacyText": "Download the policy document",
+        "infoGDPR": "Ho letto l’informativa riguardante il trattamento dei miei dati che tiene conto del Regolamento (UE) 679/2016 (GDPR).",
+        "GDPRError": "Assicurati di leggere l'informativa al trattamento dei dati personali",
+        "successMessage": "Le tue credenziali sono state salvate con successo. Riceverai una e-mail con un link per completare la tua registrazione        "
+    },
+    "home": {
+        "title": "Marketplace"
+    },
+    "store": {
+        "title": "Store"
+    },
+    "profile": {
+        "title": "Profile",
+        "changePassword": "Change password"
+    },
+    "changePassword" : {
+        "title": "Change password",
+        "oldPassword": "Old password",
+        "newPassword": "New password",
+        "confirmPassword": "Confirm password",
+        "oldPasswordError": "This field must be filled",
+        "passwordError": "Password must be at least 8 characters",
+        "confirmPasswordError": "The two passwords are different",
+        "confirm": "CONFIRM"
+    },
+    "menu": {
+        "menu": "Menu",
+        "logout": "Logout",
+        "exit": "Esci"
+    },
+    "errors": {
+        "serverTimeout": "Timeout. Nessuna risposta dal server"
+    },
+    "serverError": {
+        "invalid_grant": "Credenziali non corrette",
+        "unauthorized": "Errore di autenticazione",
+        "invalid_token": "Token non valido",
+        "Conflict": "Utente già presente nel sistema",
+        "timeout": "Timeout. Nessuna risposta dal server",
+        "error": "Errore del server"
+    },
+    "pdfError": {
+        "ENCODING_ERR": "Errore di codifica"
+    },
+    "title": "Taky",
+    "ok": "Ok",
+    "delete": "Cancella",
+    "cancel": "Annulla",
+    "loading": "Caricamento",
+    "operationComplete": "Operazione completata",
+    "operationCanceled": "Operazione annullata",
+    "operationFailed": "Operazione non riuscita",
+    "open": "Apri",
+    "error": "Errore",
+    "aborted": "Annullato",
+    "serverRequest": "Richiesta al server in corso",
+    "": ""
+}
