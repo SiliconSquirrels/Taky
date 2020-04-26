@@ -26,6 +26,11 @@ export class AppComponent implements OnInit {
       title: 'profile.title',
       url: '/profile',
       icon: 'person-circle'
+    },
+    {
+      title: 'agenda.title',
+      url: '/agenda',
+      icon: 'calendar'
     }
   ];
   // public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
