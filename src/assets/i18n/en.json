@@ -38,10 +38,10 @@
         "confirmPasswordError": "The two passwords are different",
         "register": "REGISTRER",
         "infoPrivacyLink": "https://www.example.com/gdpr.pdf",
-        "infoPrivacyText": "Download the policy document",
-        "infoGDPR": "Ho letto l’informativa riguardante il trattamento dei miei dati che tiene conto del Regolamento (UE) 679/2016 (GDPR).",
+        "infoPrivacyText": "Download the privacy policy",
+        "infoGDPR": "I've read reading   Ho letto l’informativa riguardante il trattamento dei miei dati che tiene conto del Regolamento (UE) 679/2016 (GDPR).",
         "GDPRError": "Assicurati di leggere l'informativa al trattamento dei dati personali",
-        "successMessage": "Le tue credenziali sono state salvate con successo. Riceverai una e-mail con un link per completare la tua registrazione        "
+        "successMessage": "Your credential are sucessfully saved. We sent you an email to confirm your registration"
     },
     "home": {
         "title": "Marketplace"
@@ -69,30 +69,30 @@
         "exit": "Esci"
     },
     "errors": {
-        "serverTimeout": "Timeout. Nessuna risposta dal server"
+        "serverTimeout": "Timeout. No response from server"
     },
     "serverError": {
-        "invalid_grant": "Credenziali non corrette",
-        "unauthorized": "Errore di autenticazione",
-        "invalid_token": "Token non valido",
-        "Conflict": "Utente già presente nel sistema",
-        "timeout": "Timeout. Nessuna risposta dal server",
-        "error": "Errore del server"
+        "invalid_grant": "Wrong credentials",
+        "unauthorized": "Authentication Error",
+        "invalid_token": "Token not valid",
+        "Conflict": "User already in the system",
+        "timeout": "Timeout. No respone from server",
+        "error": "Server error"
     },
     "pdfError": {
-        "ENCODING_ERR": "Errore di codifica"
+        "ENCODING_ERR": "Encoding Error"
     },
     "title": "Taky",
     "ok": "Ok",
-    "delete": "Cancella",
-    "cancel": "Annulla",
-    "loading": "Caricamento",
-    "operationComplete": "Operazione completata",
-    "operationCanceled": "Operazione annullata",
-    "operationFailed": "Operazione non riuscita",
-    "open": "Apri",
-    "error": "Errore",
-    "aborted": "Annullato",
-    "serverRequest": "Richiesta al server in corso",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "loading": "Loading",
+    "operationComplete": "Operation completed",
+    "operationCanceled": "Operation aborted",
+    "operationFailed": "Operation Failed",
+    "open": "Open",
+    "error": "Error",
+    "aborted": "Aborted",
+    "serverRequest": "Asking the server",
     "": ""
 }
