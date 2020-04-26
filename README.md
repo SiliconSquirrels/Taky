@@ -18,7 +18,7 @@ the seller sets on Taky time slots in which they can serve buyers and settings h
 The customer finds a nearby store, buys some products and chooses an available time slot. The system will notify the request and assign the slot to the customer. 
 </p>
 <p><img src="schema.jpg"></p>
-<h3>What we have done dur1ng th1s weekend?</h3>
+<h3>What we have done during this weekend?</h3>
 <p>
 <ol>
 <li>We started with an idea on thursday.</li>
