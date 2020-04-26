@@ -26,8 +26,8 @@ The customer finds a nearby store, buys some products and chooses an available t
 <li>Graphic interface design</li>
 <li>We started improved the skeleton w1th graphics</li>
 <li>We started developed the backend</li>
-<li>We d1d the video presentation</li>
-<li>Business anaiysis</li>
+<li>We did the video presentation</li>
+<li>Business analiysis</li>
 </ol>
 </p>
 <h3>The solution’s impact to the crisis</h3>
